@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Admin</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+    body {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: auto;
+    }
+    header,
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+    .logo {
+      max-width: 150px;
+    }
+    .message-header {
+      text-align: center;
+      padding: 20px;
+      font-weight: 900;
+    }
+    .email-body {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .message-body {
+      border: 1px solid #d8d8d8;
+      margin: 20px 50px;
+      padding: 50px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .message {
+      width: 30ch;
+      margin: 10px 0;
+    }
+    span {
+      margin: 10px 0;
+    }
+  </style>
+  <body
+    style="
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: auto;
+    "
+  >
+    <section>
+      <header
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+        "
+      >
+        <section>
+          <img class="logo" style="max-width: 150px" src="/static/logo.jpg" />
+        </section>
+      </header>
+      <section
+        class="email-body"
+        style="background-color: #f8f9fa; padding: 40px 0"
+      >
+        <div
+          style="text-align: center; padding: 20px; font-weight: 900"
+          class="message-header"
+        >
+          <span style="margin: 10px 0">Hi,</span><br />
+          <span style="margin: 10px 0">Welcome to the App</span> <br />
+          <div class="message" style="width: 30ch; margin: 10px 0">
+            Here is your OTP to continue.
+          </div>
+        </div>
+        <div
+          class="message-body"
+          style="
+            border: 1px solid #d8d8d8;
+            margin: 20px 50px;
+            padding: 50px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <h3>OTP:</h3>
+          <h1><%= body %></h1>
+        </div>
+      </section>
+      <footer
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+        "
+      >
+        <center>© Copyright 2021</center>
+      </footer>
+    </section>
+  </body>
+</html>
